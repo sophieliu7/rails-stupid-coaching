@@ -1,2 +1,21 @@
 <h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+
+<div class="container">
+
+
+<div class="container background">
+
+  <h2>Voici ta question : </h2>
+  <%= params[:question] %>
+
+</div>
+<div class="container background">
+  <h2>Voici la réponse du coach : </h2>
+  <%= @variable %>
+
+  <br>
+
+
+</div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
